@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Autokomfor – krovni nosači, gepek kade i oprema za automobile. Dostava širom BiH.">
+<title>Autokomfor | Krovni nosači i auto-oprema</title>
+<style>
+:root{--ink:#17202a;--muted:#667085;--orange:#f47721;--light:#f5f7fa;--line:#e4e7ec;--green:#16804a}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#fff;line-height:1.5}
+a{color:inherit;text-decoration:none}.wrap{width:min(1100px,92%);margin:auto}
+header{background:#111820;color:#fff;position:sticky;top:0;z-index:5;border-bottom:3px solid var(--orange)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 0}.brand{font-size:24px;font-weight:900;letter-spacing:.6px}.brand span{color:var(--orange)}nav{display:flex;gap:20px;font-size:14px}nav a:hover{color:var(--orange)}
+.hero{background:linear-gradient(120deg,#111820,#273442);color:white;padding:58px 0 54px}.hero-grid{display:grid;grid-template-columns:1.2fr .8fr;align-items:center;gap:30px}
+.eyebrow{color:#ffb47f;font-size:13px;font-weight:bold;text-transform:uppercase;letter-spacing:1.6px}
+h1{font-size:clamp(34px,5vw,54px);line-height:1.08;margin:12px 0 16px;letter-spacing:-1px}.hero p{color:#e0e5eb;max-width:560px;font-size:17px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}.btn{display:inline-flex;align-items:center;justify-content:center;border:0;border-radius:8px;padding:12px 18px;font-weight:bold;cursor:pointer;font-size:15px}.primary{background:var(--orange);color:#111}.secondary{border:1px solid #84909b;color:white;background:transparent}
+.hero-art{min-height:220px;border:1px solid #4a5968;border-radius:18px;background:radial-gradient(ellipse at 50% 15%,#4b5a68,#202b36 70%);display:flex;align-items:center;justify-content:center;padding:22px;text-align:center}.roof-icon{font-size:72px}.hero-art strong{display:block;font-size:19px}.hero-art small{color:#c8d0d8}
+.trust{background:var(--light);border-bottom:1px solid var(--line)}.trust-row{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;padding:18px 0;text-align:center;font-size:14px;font-weight:bold}
+section{padding:48px 0}.section-head{text-align:center;max-width:650px;margin:0 auto 28px}.section-head h2{font-size:30px;margin:0 0 8px}.section-head p{color:var(--muted);margin:0}
+.products{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.product{border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#fff;box-shadow:0 5px 18px #1018280a}.product-visual{height:170px;background:linear-gradient(135deg,#f4f6f8,#e8edf2);display:flex;align-items:center;justify-content:center;font-size:58px}.product-body{padding:18px}.product h3{margin:0 0 8px;font-size:19px}.product p{margin:0 0 14px;color:var(--muted);font-size:14px;min-height:42px}.price{font-size:21px;font-weight:900;margin-bottom:14px}.price small{font-size:12px;font-weight:normal;color:var(--muted)}
+.order{background:var(--light)}.order-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:28px;align-items:start}.order-info h2{font-size:30px;line-height:1.15;margin:0 0 12px}.order-info p{color:var(--muted)}.contact-line{padding:12px 0;border-bottom:1px solid var(--line);font-weight:bold}
+form{background:white;border:1px solid var(--line);border-radius:14px;padding:22px;display:grid;grid-template-columns:1fr 1fr;gap:14px}label{font-size:13px;font-weight:bold;display:block;margin-bottom:5px}input,select,textarea{width:100%;border:1px solid #cfd5dd;border-radius:7px;padding:12px;font:inherit;background:white}textarea{min-height:88px;resize:vertical}.full{grid-column:1/-1}.note{font-size:12px;color:var(--muted)}
+footer{background:#111820;color:white;padding:25px 0}.footer-row{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap;color:#c5ccd3;font-size:13px}
+.float-wa{position:fixed;right:17px;bottom:17px;background:#16804a;color:white;border-radius:99px;padding:13px 17px;font-weight:bold;box-shadow:0 5px 20px #0003;z-index:6}
+@media(max-width:760px){nav{gap:10px;font-size:12px}.brand{font-size:21px}.hero{padding:40px 0}.hero-grid,.order-grid{grid-template-columns:1fr}.hero-art{min-height:150px}.roof-icon{font-size:48px}.trust-row{grid-template-columns:1fr;gap:8px}.products{grid-template-columns:1fr}.product-visual{height:130px}form{grid-template-columns:1fr}.full{grid-column:auto}section{padding:38px 0}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav"><a class="brand" href="#"><span>auto</span>komfor</a><nav><a href="#proizvodi">Proizvodi</a><a href="#narudzba">Narudžba</a><a href="#kontakt">Kontakt</a></nav></div></header>
+<main>
+<section class="hero"><div class="wrap hero-grid">
+<div><div class="eyebrow">Auto-oprema za vaše putovanje</div><h1>Krovni nosači za vaše vozilo.</h1><p>Pronađite krovne nosače i praktičnu opremu za automobil. Javite nam marku, model i godište vozila, a mi ćemo pomoći da odaberete odgovarajući proizvod.</p><div class="actions"><a class="btn primary" href="#proizvodi">Pogledaj ponudu</a><a class="btn secondary" href="https://wa.me/38766969384?text=Pozdrav%20Autokomfor%2C%20trebam%20informacije%20o%20krovnim%20nosa%C4%8Dima." target="_blank" rel="noopener">Piši na WhatsApp</a></div></div>
+<div class="hero-art"><div><div class="roof-icon">🚙</div><strong>AUTOKOMFOR</strong><small>Krovni nosači • Gepek kade • Auto-oprema</small></div></div>
+</div></section>
+<div class="trust"><div class="wrap trust-row"><div>✓ Pomoć pri odabiru nosača</div><div>✓ Dostava širom BiH</div><div>✓ Jednostavna narudžba</div></div></div>
+<section id="proizvodi"><div class="wrap"><div class="section-head"><h2>Naša ponuda</h2><p>Odaberite kategoriju i pošaljite nam podatke o vozilu da provjerimo odgovara li proizvod.</p></div>
+<div class="products">
+<article class="product"><div class="product-visual">🚗</div><div class="product-body"><h3>Krovni nosači</h3><p>Za različite marke i modele automobila. Kompatibilnost provjeravamo prema vozilu.</p><div class="price">od 85 KM <small>/ primjer cijene</small></div><button class="btn primary" onclick="chooseProduct('Krovni nosači')">Naruči / provjeri</button></div></article>
+<article class="product"><div class="product-visual">🧳</div><div class="product-body"><h3>Gepek kade</h3><p>Tipski podmetači za zaštitu prtljažnika. Dostupnost zavisi od modela vozila.</p><div class="price">Cijena na upit</div><button class="btn primary" onclick="chooseProduct('Gepek kada')">Provjeri cijenu</button></div></article>
+<article class="product"><div class="product-visual">🚲</div><div class="product-body"><h3>Nosači za bicikle</h3><p>Opcije za prevoz bicikala. Pošaljite nam vozilo i recite kako želite prevoziti bicikl.</p><div class="price">Cijena na upit</div><button class="btn primary" onclick="chooseProduct('Nosač za bicikl')">Provjeri ponudu</button></div></article>
+</div><p class="note" style="text-align:center;margin-top:18px">Napomena: cijena 85 KM je početni primjer za krovne nosače. Prije objave provjerite i prilagodite cijene, dostupnost i opise.</p>
+</div></section>
+<section class="order" id="narudzba"><div class="wrap order-grid"><div class="order-info"><h2>Pošaljite upit ili narudžbu</h2><p>Unesite podatke i pritisnite dugme. Otvoriće se WhatsApp s pripremljenom porukom koju možete pregledati i poslati.</p><div class="contact-line">📦 Dostava širom Bosne i Hercegovine</div><div class="contact-line">💬 WhatsApp: 066 969 384</div><p class="note">Ova početna verzija ne čuva narudžbe u bazi; poruka se šalje preko vašeg WhatsAppa nakon što je vi potvrdite.</p></div>
+<form id="orderForm">
+<div><label for="name">Ime i prezime *</label><input id="name" required placeholder="Vaše ime"></div>
+<div><label for="phone">Broj telefona *</label><input id="phone" required type="tel" placeholder="06x xxx xxx"></div>
+<div><label for="product">Proizvod *</label><select id="product" required><option value="">Izaberite proizvod</option><option>Krovni nosači</option><option>Gepek kada</option><option>Nosač za bicikl</option><option>Kofer za putovanje - najam</option></select></div>
+<div><label for="vehicle">Vozilo (marka/model/godište) *</label><input id="vehicle" required placeholder="npr. Golf 7, 2015."></div>
+<div class="full"><label for="address">Adresa za dostavu</label><input id="address" placeholder="Ulica, mjesto"></div>
+<div class="full"><label for="details">Dodatne informacije</label><textarea id="details" placeholder="Npr. ima li vozilo uzdužne šine?"></textarea></div>
+<div class="full"><button class="btn primary" type="submit">Pošalji narudžbu putem WhatsAppa</button><div class="note" style="margin-top:8px">Klikom na dugme otvara se WhatsApp; narudžba nije poslata dok ne pritisnete Pošalji u WhatsAppu.</div></div>
+</form></div></section>
+<section id="kontakt"><div class="wrap section-head"><h2>Kontaktirajte Autokomfor</h2><p>Imate pitanje ili niste sigurni koji nosači odgovaraju vašem autu? Javite nam se.</p><div class="actions" style="justify-content:center"><a class="btn primary" href="https://wa.me/38766969384?text=Pozdrav%20Autokomfor!" target="_blank" rel="noopener">WhatsApp: 066 969 384</a></div></div></section>
+</main>
+<footer><div class="wrap footer-row"><div><strong style="color:white">AUTOKOMFOR</strong> · Krovni nosači i auto-oprema</div><div>© <span id="year"></span> Autokomfor</div></div></footer>
+<a class="float-wa" href="https://wa.me/38766969384?text=Pozdrav%20Autokomfor!" target="_blank" rel="noopener">WhatsApp</a>
+<script>
+function chooseProduct(p){document.getElementById('product').value=p;document.getElementById('narudzba').scrollIntoView({behavior:'smooth'});}
+document.getElementById('orderForm').addEventListener('submit',function(e){e.preventDefault();const val=id=>document.getElementById(id).value.trim();const msg=`Pozdrav Autokomfor! Želim poslati narudžbu/upit.\nIme i prezime: ${val('name')}\nTelefon: ${val('phone')}\nProizvod: ${val('product')}\nVozilo: ${val('vehicle')}\nAdresa: ${val('address')||'Nije navedena'}\nDodatno: ${val('details')||'Nema dodatnih informacija'}`;window.open('https://wa.me/38766969384?text='+encodeURIComponent(msg),'_blank','noopener');});
+document.getElementById('year').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
